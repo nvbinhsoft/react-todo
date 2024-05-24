@@ -1,21 +1,20 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Alert from "./components/Alert.tsx";
 
 function App() {
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <p>Start learning ReactJS</p>
-    </>
-  )
+    // const items = [
+    //     'New York',
+    //     'Los Angeles',
+    //     'Chicago',
+    //     'Houston',
+    // ]
+    //
+    // const handleSelectedItem = (item: string) => {
+    //     console.log(item)
+    // }
+
+    return <div><Alert>
+        Hello <span>React</span>
+    </Alert></div>
 }
 
 export default App
