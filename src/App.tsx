@@ -1,20 +1,15 @@
-import Alert from "./components/Alert.tsx";
+import {FC, ReactElement} from "react";
+import {CssBaseline, ThemeProvider} from "@mui/material";
+import {customTheme} from "./theme/customTheme.ts";
+import {Dashboard} from "./pages/dashboard.tsx";
 
-function App() {
-    // const items = [
-    //     'New York',
-    //     'Los Angeles',
-    //     'Chicago',
-    //     'Houston',
-    // ]
-    //
-    // const handleSelectedItem = (item: string) => {
-    //     console.log(item)
-    // }
-
-    return <div><Alert>
-        Hello <span>React</span>
-    </Alert></div>
+const App: FC = (): ReactElement => {
+    return (
+        <ThemeProvider theme={customTheme}>
+            <CssBaseline/>
+            <Dashboard/>
+        </ThemeProvider>
+    )
 }
 
 export default App
